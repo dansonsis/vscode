@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* Обнуление */
+@import url("https: fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* ------------------ */
+body {
+  line-height: 1;
+  background-color: #333;
+  color: #fff;
+  font-family: Roboto;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* СТИЛИ БЛОКА */
+.exemple {
+  padding: 80px 0;
+  /* ВЕРХНЯЯ ЧАСТЬ */
+  /* СТРУКТУРА КАРТОЧЕК */
+}
+.exemple__container {
+  padding: 0px 15px;
+  margin: 0 auto;
+  max-width: 65.625rem;
+  position: relative;
+}
+@media (min-width: 48em) {
+  .exemple__container::before {
+    content: "";
+    background: url("../img/decor.svg") 0 0/100% no-repeat;
+    position: absolute;
+    right: 0;
+    width: 14.57%;
+    padding-top: 22.95%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+.exemple__header {
+  margin: 0px 0px 25px 0px;
+  max-width: 46.875rem;
+}
+.exemple__sub-title {
+  color: #A989C7;
+  font-family: Roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  margin: 0px 0px 1.07em 0px;
+}
+.exemple__title {
+  color: #93B482;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  line-height: 1.19;
+  margin: 0px 0px 0.38em 0px;
+  letter-spacing: 0.12em;
+}
+.exemple__text {
+  line-height: 1.5;
+}
+.exemple__items {
+  /*display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  margin: 0px -12px;
+  */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.125rem, 1fr));
+  gap: 24px;
+}
+.exemple__item {
+  /*padding: 0px 12px;
+  // Получаем размер в %
+  // делим общую ширину 100% на три
+  flex: 1 1 3.333%;
+  // Переводим в REM
+  // делим размер по макету (290рх)
+  // на 16 (размер шрифта по умолчанию)
+  min-width: 18.125rem;
+  */
+}
+
+/* КАРТОЧКА */
+.item-exemple {
+  display: grid;
+}
+.item-exemple__title {
+  color: #F2726F;
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin: 0px 0px 0.45em 0px;
+}
+.item-exemple__text {
+  line-height: 1.5;
+}
